@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'NDot';
+  src: url('/fonts/NDot.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NType82';
+  src: url('/fonts/NType82.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NType82Mono';
+  src: url('/fonts/NType82Mono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'LLLetteraMono';
+  src: url('/fonts/LLLetteraMono.woff2') format('woff2');
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: rgb(242, 233, 222);
+  --foreground: rgb(26, 26, 26);
+  --accent: rgb(31, 19, 14);
+  --border: rgb(0, 0, 0);
+  --paper: rgb(245, 238, 230);
+  --shadow: rgba(0, 0, 0, 0.1);
+  color-scheme: light;
+  color-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --font-ndot: 'NDot', serif;
+  --font-ntype82: 'NType82', serif;
+  --font-ntype82mono: 'NType82Mono', monospace;
+  --font-letteramono: 'LLLetteraMono', monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ndot);
+}
+
+.vintage-border {
+  border: 2px solid var(--border);
+  box-shadow: 4px 4px 8px var(--shadow);
+  background-color: var(--paper);
+}
+
+.vintage-text {
+  color: var(--foreground);
+  text-shadow: 1px 1px 2px var(--shadow);
+}
+
+.vintage-button {
+  transition: all 0.3s ease;
+  border: 2px solid var(--border);
+  position: relative;
+  background-color: var(--paper);
+}
+
+.vintage-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--border);
+  background-color: var(--accent);
+  color: var(--paper);
+}
+
+.vintage-button.active {
+  background-color: var(--accent);
+  color: var(--paper);
+  box-shadow: 4px 4px 0 var(--border);
+  border: 2px solid var(--border);
+  font-weight: bold;
 }
