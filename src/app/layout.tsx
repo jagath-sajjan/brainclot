@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BRAIN CLOT NEWS - Where Bits Meet Paper | The World's Most Cryptic Newspaper",
+  title: "BRAIN CLOT NEWS - Where Bits Meet Paper | The World&apos;s Most Cryptic Newspaper",
   description: "Transform your thoughts into binary brilliance with our vintage-style code conversion tool"
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>BRAIN CLOT NEWS - Where Bits Meet Paper | The World's Most Cryptic Newspaper</title>
+        <title>BRAIN CLOT NEWS - Where Bits Meet Paper | The World&apos;s Most Cryptic Newspaper</title>
         <meta name="description" content="Transform your thoughts into binary brilliance with our vintage-style code conversion tool" />
       </head>
       <body

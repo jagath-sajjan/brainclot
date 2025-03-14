@@ -54,7 +54,7 @@ export default function Home() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-black font-ntype82 tracking-tighter uppercase vintage-text mb-4">
             BRAIN CLOT NEWS
           </h1>
-          <p className="text-sm font-ntype82mono mt-2">CONVERTING THOUGHTS INTO BITS AND BYTES - THE WORLD'S MOST CRYPTIC NEWSPAPER</p>
+          <p className="text-sm font-ntype82mono mt-2">CONVERTING THOUGHTS INTO BITS AND BYTES - THE WORLD&apos;S MOST CRYPTIC NEWSPAPER</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
